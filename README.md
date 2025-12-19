@@ -59,7 +59,7 @@ Before submitting rules for review, please first check them using the Python [ru
 
 ## Member List (by subgroup)
 
-***Data & Tools -*** *Jane Hawkey/Kat Holt*, Andrew McArthur, Finlay Maguire, Michael Feldgarden, Brody Duncan, Kristy Horan, Leonid Chindelevitch, Kara Tsang, Amogelang Raphenya, Dag Harmsen, Emily Bordeleau, Mackenzie Wilke, Romain Pogorelcnik, Yu Wan, Zoe Dyson, Bogdan Iorga, Derek Sarovich, John Rossen, Silvia Argimon, Charlene Rodrigues, Rolf Kaas, Nick Duggett, Louise Teixeira Cerdeira, Matthijs Berends, Adrian Egli, João Perdigão
+***Data & Tools -*** *Jane Hawkey/Kat Holt*, Andrew McArthur, Finlay Maguire, Michael Feldgarden, Brody Duncan, Kristy Horan, Leonid Chindelevitch, Kara Tsang, Amogelang Raphenya, Dag Harmsen, Emily Bordeleau, Mackenzie Wilke, Romain Pogorelcnik, Yu Wan, Zoe Dyson, Bogdan Iorga, Derek Sarovich, John Rossen, Silvia Argimon, Charlene Rodrigues, Rolf Kaas, Nick Duggett, Louise Teixeira Cerdeira, Matthijs Berends, Adrian Egli, João Perdigão, Tiffany Ta
 
 ***Enterococcus -*** *Francesc Coll*, Thomas Demuyser, Ana R. Freitas, Guido Werner, Precious Osadebamwen, Theo Gouliouris, Fiona Walsh, Valeria Bortolaia, Basil Britto Xavier, Helena Seth-Smith
 
@@ -81,7 +81,7 @@ Before submitting rules for review, please first check them using the Python [ru
 
 ***Mycobacterium tuberculosis -*** *Leonid Chindelevitch*, Iñaki Comas, Philip Fowler, Kristy Horan, Priyanka Khopkar-Kale, Mariana López, Conor Meehan, Adam Witney, Brian Alcock, Francesca Saluzzo, João Perdigão
 
-***Streptococcus -*** *Mario Ramirez*, Assaf Rokney, Holly Grace Espiriu, Stefanie Desmet
+***Streptococcus -*** *Mario Ramirez*, Assaf Rokney, Holly Grace Espiriu, Stefanie Desmet, Elita Jauneikaite
 
 ***Campylobacter -*** *Birgitta Duim*, Bruno Silvester Lopes, Malgorzata Ligowska-Marzeta, Monica Oleastro, Tee Keat Teoh, Bogdan Iorga, Diana Costa, Sangeeta Banerji, Alexandra Nunes
 
@@ -95,7 +95,7 @@ Before submitting rules for review, please first check them using the Python [ru
 
 ***Citrobacter-*** *Teresa Ribeiro*, Roberto Sierra, Diego Andrey
 
-***Achromobacter xylosoxidans -*** *Charlotte Michel*, Lucie Amoureux, Miglė Gabrielaitė
+***Achromobacter xylosoxidans -*** *Charlotte Michel*, Lucie Amoureux, Miglė Gabrielaitė, Lisa Påhlman
 
 ***Aeromonas -*** *Po-Yu Liu*, João PedroFurlan, Hsien-Po Huang, Po-Hsiui
 
