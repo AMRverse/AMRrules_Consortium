@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ESGEM-AMR Working Group</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <style>
         * {
             margin: 0;
@@ -254,24 +255,11 @@
             <a href="#partners">Partners</a>
         </nav>
         
-        <main>
-            <!-- Overview Section -->
+        <main>(Dynamic) -->
             <section id="overview">
                 <h2>Overview</h2>
-                <div class="repo-content">
-                    <p>
-                        This repository is the home of the <strong>ESGEM-AMR Working Group</strong>, which focuses on 
-                        curating organism-specific rule sets for interpreting AMR genotypes under the 
-                        <a href="https://github.com/AMRverse/AMRrules" target="_blank">AMRrules</a> framework.
-                    </p>
-                    <p>
-                        We have partnered with <strong>ESGEM, the ESCMID Study Group on Epidemiological Markers</strong>, 
-                        to form an ESGEM-AMR Working Group to curate organism-specific rule sets.
-                    </p>
-                    <p>
-                        The goal of AMRrules is to develop interpretive standards for AMR genotypes, akin to the 
-                        interpretive standards developed by <a href="https://www.eucast.org/" target="_blank">EUCAST</a> 
-                        and <a href="https://clsi.org/" target="_blank">CLSI</a> for antimicrobial susceptibility phenotyping.
+                <div id="overview-content" class="repo-content">
+                    <p>Loading content...    and <a href="https://clsi.org/" target="_blank">CLSI</a> for antimicrobial susceptibility phenotyping.
                     </p>
                 </div>
             </section>
@@ -479,24 +467,11 @@
                     <p style="margin-top: 20px;">
                         A call for members was launched in April 2024 and received over 120 applications. 
                         The group has now grown to <strong>175+ members</strong> organized into 19 organism-focused subgroups.
-                    </p>
-                    <p>
-                        For a complete list of members by subgroup, please refer to the 
-                        <a href="./README.md" target="_blank">README.md file</a>.
-                    </p>
-                </div>
-            </section>
-            
-            <!-- Partners Section -->
-            <section id="partners">
-                <h2>Partners & Collaborations</h2>
-                <div class="repo-content">
-                    <h3>EUCAST Partnership</h3>
-                    <p>
-                        We partner with <a href="https://www.eucast.org/" target="_blank">EUCAST</a> 
-                        (European Committee on Antimicrobial Susceptibility Testing) to ensure alignment with:
-                    </p>
-                    <ul style="margin-left: 20px; margin-top: 10px;">
+                    </p>(Dynamic) -->
+            <section id="members">
+                <h2>Leadership & Members</h2>
+                <div id="members-content" class="repo-content">
+                    <p>Loading members information...<ul style="margin-left: 20px; margin-top: 10px;">
                         <li><a href="https://www.eucast.org/organization/subcommittees/wgs_and_phenotypic_testing" target="_blank">
                             EUCAST Subcommittee on WGS and Phenotypic AST</a></li>
                         <li><a href="https://www.eucast.org/expert_rules_and_expected_phenotypes/expected_phenotypes" target="_blank">
@@ -513,34 +488,11 @@
                     <p>
                         We are keen to partner with other allied organizations and initiatives in antimicrobial resistance. 
                         If you're interested in collaboration, please 
-                        <a href="https://www.escmid.org/contact/" target="_blank">get in touch</a>.
-                    </p>
-                </div>
-            </section>
-            
-            <!-- Contribution Guide -->
-            <section>
-                <h2>Getting Involved</h2>
-                <div class="repo-content">
-                    <h3>Register Your Interest</h3>
-                    <p>
-                        Additional requests to join ESGEM-AMR are considered periodically. 
-                        You can register your interest and let us know what organism(s) you have expertise in using 
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeH96VlioxLKarZOLMqD-f1fLnb9WYOHYz4tZ9NtQzpHrKyzw/viewform?usp=sf_link" target="_blank">
-                            this form
-                        </a>.
-                    </p>
-                    
-                    <h3 style="margin-top: 20px;">Before Submitting Rules</h3>
-                    <p>
-                        Rules should be validated using the <a href="https://github.com/AMRverse/AMRrulevalidator" target="_blank">
-                            Python rulevalidator tool</a> before submitting for review.
-                    </p>
-                </div>
-            </section>
-        </main>
-        
-        <footer>
+                        <a href="h(Dynamic) -->
+            <section id="partners">
+                <h2>Partners & Collaborations</h2>
+                <div id="partners-content" class="repo-content">
+                    <p>Loading partners information...
             <p>
                 ESGEM-AMR Working Group | 
                 <a href="https://github.com/AMRverse" target="_blank">GitHub</a> | 
@@ -552,5 +504,61 @@
             </p>
         </footer>
     </div>
-</body>
-</html>
+    
+    <script>
+        // Fetch and parse README.md dynamically
+        async function loadReadmeContent() {
+            try {
+                // Fetch the README.md file from the parent directory
+                const response = await fetch('../README.md');
+                if (!response.ok) throw new Error('Failed to fetch README.md');
+                
+                const markdown = await response.text();
+                
+                // Parse the markdown and extract sections
+                extractAndRenderSections(markdown);
+            } catch (error) {
+                console.error('Error loading README:', error);
+                document.getElementById('overview-content').innerHTML = 
+                    '<p style="color: #d63384;">Could not load content from README.md</p>';
+            }
+        }
+        
+        function extractAndRenderSections(markdown) {
+            // Extract introduction (before first ## heading)
+            const introMatch = markdown.match(/^[\s\S]*?(?=##|$)/);
+            if (introMatch) {
+                const intro = introMatch[0].trim();
+                // Remove the logo and just get the text
+                const introText = intro.replace(/\<img.*?\>/g, '').trim();
+                if (introText) {
+                    document.getElementById('overview-content').innerHTML = marked.parse(introText);
+                }
+            }
+            
+            // Extract Membership section
+            const membershipMatch = markdown.match(/## Membership([\s\S]*?)(?=##|$)/);
+            if (membershipMatch) {
+                const membershipContent = '## Membership' + membershipMatch[1];
+                // Get only the first part (leadership info) before the member list
+                const leadershipMatch = membershipContent.match(/## Membership([\s\S]*?)(?=###|##|Member List|$)/);
+                if (leadershipMatch) {
+                    const content = leadershipMatch[1].trim();
+                    document.getElementById('members-content').innerHTML = marked.parse(content);
+                }
+            }
+            
+            // Extract Partners section
+            const partnersMatch = markdown.match(/## Partners([\s\S]*?)(?=##|$)/);
+            if (partnersMatch) {
+                const partnersContent = '## Partners' + partnersMatch[1];
+                document.getElementById('partners-content').innerHTML = marked.parse(partnersContent);
+            }
+        }
+        
+        // Load content when page loads
+        document.addEventListener('DOMContentLoaded', loadReadmeContent);
+        
+        // Optional: Refresh every 5 minutes in case README is updated
+        // setInterval(loadReadmeContent, 5 * 60 * 1000);
+    </script>
