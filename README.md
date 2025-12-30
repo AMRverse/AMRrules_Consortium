@@ -91,7 +91,7 @@ Before submitting rules for review, they should be first checked using the Pytho
 
 ***Stenotrophomonas maltophilia -*** *Jane Hawkey*, Derek Sarovich, David Wareham, Fiona Walsh, Rietie Venter, Kat Holt
 
-***Serratia -*** *Sandra Reuter*, Teresa Coque, Adam Komorowski, Basil Britto Xavier, Brian Forde, João PedroFurlan
+***Serratia -*** *Sandra Reuter*, Teresa Coque, Adam Komorowski, Basil Britto Xavier, Brian Forde, João Pedro Furlan
 
 ***Citrobacter-*** *Teresa Ribeiro*, Roberto Sierra, Diego Andrey
 
@@ -119,9 +119,9 @@ Before submitting rules for review, they should be first checked using the Pytho
 
 ***Corynebacterium diphtheriae -*** *Sylvain Brisse*, Louise Teixeira Cerdeira, Adrian Egli, Teresa Ribeiro
 
-***Legionella -*** *Charlotte Michel*, Ghislaine Descours, Christophe	Ginevra, Stefano De Giorgi, Nancy Flountzi, Jarraud	Sophie
+***Legionella -*** *Charlotte Michel*, Ghislaine Descours, Christophe	Ginevra, Stefano De Giorgi, Nancy Flountzi,	Sophie Jarraud
 
-***Mycoplasma pneumoniae -*** *Mike Beeton*, Anna	Roditscheff, Sabine Pereyre, Patrick Meyer Sauteur, Nick Duggett, Jørgen Skov Jensen
+***Mycoplasma -*** *Mike Beeton*, Anna	Roditscheff, Sabine Pereyre, Patrick Meyer Sauteur, Nick Duggett, Jørgen Skov Jensen
 
 ***Neisseria meningitidis -*** *Célia Bettencourt*, Leonor Sanchez Buso, Ala-Eddine Deghmane, Wesley Mattheus, Ana Filipa Vale, Alexandra Nunes
 
